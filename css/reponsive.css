@@ -1,0 +1,438 @@
+/* 
+Ghi chú:
+- Các loại màn hình khi làm việc với Responsive
+ + Không có màn hình cố định khi làm việc với Responsive ( phụ thuộc vào độ phực tạp của dự án)
+ + Tất cả các màn hình trong các dự án chỉ mang tính tương đối
+ + Một số loại màn hình phổ biến 
+  
+  1. Màn hình mobile 
+  -Chiều dọc:
+  @media all and (max width: 320px) {}
+  -Chiều ngang:
+  @media all and (min-width: 321px) and (max-width: 480px) {}
+  2. Máy tính bảng 
+  -Chiều dọc:
+  @media all and (max-width: 480px) {}
+  -Chiều ngang:
+  @media all and (min-width: 481px) and (max-width: 600px) {}
+  3. Máy tính bảng loại to
+  -Chiều dọc:
+   @media all and (max width: 600px) {}
+  -Chiều ngang:
+   @media all and (min-width: 601px) and (max-width: 768px) {}
+  4. Màn hình máy tính nhỏ 
+  -Chiều dọc:
+   @media all and (max-width: 768px) {}
+  -Chiều ngang:
+   @media all and (min-width: 769px) and (max-width: 1024px) {}
+
+- Lời khuyên khi viết Responsive
+ + Nên sử dụng đơn vị tương đối (%)
+ + Nên sử dụng max-width
+ + Kết hợp display: none và display: block để ẩn hiên hiện trên các màn hình 
+ + Sử dụng !important để ưu tiên hiện thị 
+
+*/
+
+/* Màn hình máy tính nhỏ  */
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  /* .banner{
+    display: none;
+  } */
+
+  .banner-inner--1 {
+    display: none;
+  }
+
+  .banner .banner-inner .banner-inner--item {
+    top: 101px;
+    left: 760px;
+    transform: rotate(233deg) scale(1.1) skew(1deg);
+    -webkit-transform: rotate(234deg) scale(1.2) skew(1deg);
+    -moz-transform: rotate(233deg) scale(1.1) skew(1deg);
+    -ms-transform: rotate(233deg) scale(1.1) skew(1deg);
+    -o-transform: rotate(233deg) scale(1.1) skew(1deg);
+  }
+
+  .banner .banner-inner .banner-inner--item1 {
+    top: 760px;
+    left: -582px;
+    transform: scale(1) rotate(-22deg);
+  }
+
+  .banner .banner-inner .banner-inner--item2 {
+    top: 2346px;
+    left: 788px;
+    transform: rotate(324deg) scale(1.7) translate(13px, 10px);
+    -webkit-transform: rotate(321deg) scale(1.4) translate(13px, 10px);
+    -moz-transform: rotate(324deg) scale(1.7) translate(13px, 10px);
+    -ms-transform: rotate(324deg) scale(1.7) translate(13px, 10px);
+    -o-transform: rotate(324deg) scale(1.7) translate(13px, 10px);
+  }
+
+  .banner .banner-inner .banner-inner--5 {
+    display: none;
+  }
+
+  .banner .banner-inner .banner-inner--8 {
+    top: 4342px;
+    left: -335px;
+    transform: rotate(65deg) scale(0.7) skew(1deg);
+  }
+
+  .banner-inner--9 {
+    display: none;
+  }
+
+  .header .header__top {
+    margin: 0;
+  }
+
+  .header__top-logo {
+    width: 58%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+  }
+
+  .header__top-menu {
+    margin: 0px -29px;
+  }
+
+  .header__top-content .top-content--topic span button{
+    position: relative;
+  }
+
+  .header__top-bttuon {
+    display: none;
+  }
+
+  .main__title {
+    margin-top: 60px !important;
+  }
+
+  .main .main__content-1{
+    margin-right: 186px;
+    justify-content: space-around;
+  }
+
+  .main .main__content-2 {
+    width: 95%;
+  }
+
+  .main .main__content-2 .content-2:nth-child(3){
+    display: none;
+  }
+
+  .main .main__content-4 .content-4{
+    width: 1000px;
+    height: 263px;
+  }
+
+  .main .main__content-5 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .main__content-bottom nav ul {
+    justify-content: start;
+  }
+
+  .main__content-bottom,
+  .footer {
+    width: 1127px;
+  }
+
+  .footer{
+    padding: 49px 338px;
+  }
+
+  .footer-left{
+    width: 999px;
+  }
+
+  .back-to-top{
+    right: 42%;
+  }
+
+  .back-to-top span {
+    width: 80px;
+    height: 80px;
+    padding: 17px 10px;
+    font-size: 44px;
+  }
+
+}
+
+/* Máy tính bảng loại to */
+@media all and (min-width: 601px) and (max-width: 768px) {
+  .banner-inner--1 {
+    display: none;
+  }
+
+  .banner .banner-inner .banner-inner--item {
+    top: 101px;
+    left: 852px;
+    transform: rotate(233deg) scale(1.1) skew(1deg);
+    -webkit-transform: rotate(234deg) scale(1.2) skew(1deg);
+    -moz-transform: rotate(233deg) scale(1.1) skew(1deg);
+    -ms-transform: rotate(233deg) scale(1.1) skew(1deg);
+    -o-transform: rotate(233deg) scale(1.1) skew(1deg);
+  }
+
+  .banner .banner-inner .banner-inner--item1 {
+    top: 860px;
+    left: -417px;
+    transform: scale(1.5) rotate(-13deg);
+    -webkit-transform: scale(1) rotate(-16deg);
+    -moz-transform: scale(1.5) rotate(-13deg);
+    -ms-transform: scale(1.5) rotate(-13deg);
+    -o-transform: scale(1.5) rotate(-13deg);
+  }
+
+  .banner .banner-inner .banner-inner--item2 {
+    top: 2346px;
+    left: 919px;
+    transform: rotate(324deg) scale(1.7) translate(-66px, 10px);
+    -webkit-transform: rotate(324deg) scale(1.5) translate(-67px, 10px);
+    -moz-transform: rotate(324deg) scale(1.7) translate(-66px, 10px);
+    -ms-transform: rotate(324deg) scale(1.7) translate(-66px, 10px);
+    -o-transform: rotate(324deg) scale(1.7) translate(-66px, 10px);
+}
+
+  .banner-inner--5,
+  .banner-inner--9{
+    display: none;
+  }
+
+  .banner .banner-inner .banner-inner--8 {
+    display: none;
+  }
+
+  .header .header__top {
+    margin: 0;
+  }
+
+  .header__top-logo {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+  }
+
+  .header__top-menu {
+    margin: 0px 73px;
+  }
+
+  .header__top-bttuon {
+    display: none;
+  }
+
+  .main__content-bottom nav ul{
+    justify-content: start;
+  }
+
+  .main .main__content-1,
+  .main .main__content-3 {
+    margin: 25px 145px 0px 0px;
+  }
+
+  .main .main__content-2 {
+    width: 96%;
+  }
+
+  .main .main__content-2 .content-2:nth-child(3){
+    display: none;
+  }
+
+  .main__content-4 .content-4{
+    width: 903px !important; 
+    height: 250px !important;
+  }
+
+  .main .main__content-5{
+    justify-content: start;
+    width: 1190px;
+  }
+
+  .main__content-bottom,
+  .footer {
+    width: 1127px;
+  }
+
+  .footer{
+    padding: 37px 219px;
+  }
+  
+  .footer-left{
+    width: 999px;
+  }
+
+  .back-to-top{
+    right: 46%;
+  }
+
+  .back-to-top span {
+    width: 80px;
+    height: 80px;
+    padding: 17px 10px;
+    font-size: 44px;
+  }
+}
+
+/* Máy tính bảng  */
+@media all and (min-width: 481px) and (max-width: 600px) {
+  .banner{
+    display: none;
+  }
+
+  .header .header__top {
+    width: 1443px;
+    margin: 0;
+  }
+
+  .header__top-logo {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 10px -46px;
+  }
+
+  .header__top-menu {
+    margin: 0px 2px;
+  }
+
+  .main .main__title {
+    margin: 62px 0px !important;
+  }
+
+  .main .main__content-1, .main .main__content-3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0px;
+  }
+
+  .main .main__content-2 {
+    width: 96%;
+  }
+
+  .main .main__content-2 .content-2:nth-child(3){
+    display: none;
+  }
+
+  .main__content-4 .content-4{
+    width: 903px !important; 
+    height: 250px !important;
+  }
+
+  .main .main__content-5{
+    justify-content: start;
+    width: 1190px;
+  }
+
+  .main__content-bottom,
+  .footer {
+    width: 784px;
+  }
+
+  .footer{
+    padding: 37px 219px;
+  }
+  
+  .footer-left{
+    width: 999px;
+  }
+
+  .back-to-top{
+    right: 48%;
+  }
+
+  .back-to-top span {
+    width: 80px;
+    height: 80px;
+    padding: 17px 10px;
+    font-size: 44px;
+  }
+}
+
+/* Màn hình mobile  */
+@media all and (min-width: 321px) and (max-width: 480px) {
+  .banner{
+    display: none;
+  }
+  .header .header__top {
+    width: 1249px;
+    margin: 0;
+  }
+
+  .header__top-logo {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 10px -46px;
+  }
+
+  .header__top-menu {
+    margin: 0px 2px;
+  }
+
+  .top-content--topic{
+    width: 675px;
+  }
+
+  .header__top-content .top-content--topic .content-topic--nav ul li {
+    font-size: 11px;
+  }
+
+  .main .main__title {
+    margin: 62px 0px !important;
+  }
+
+  .main .main__content-1, .main .main__content-3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0px;
+  }
+
+  .main .main__content-2 {
+    width: 90%;
+  }
+
+  .main .main__content-2 .content-2:nth-child(3){
+    display: none;
+  }
+
+  .main__content-4 .content-4{
+    width: 903px !important; 
+    height: 250px !important;
+  }
+
+  .main .main__content-5{
+    justify-content: start;
+    width: 1190px;
+  }
+
+  .main__content-bottom,
+  .footer {
+    width: 784px;
+  }
+
+  .footer{
+    padding: 37px 219px;
+  }
+  
+  .footer-left{
+    width: 999px;
+  }
+
+  .back-to-top{
+    right: 43%;
+  }
+
+  .back-to-top span {
+    width: 80px;
+    height: 80px;
+    padding: 17px 10px;
+    font-size: 44px;
+  }
+}

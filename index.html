@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I&E</title>
+    <link rel="icon" type="images/png" href="images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
@@ -13,12 +14,18 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/grid_system.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reponsive.css">
 </head>
 
-<body>
+<body class="animate__animated animate__fadeIn">
+    <div id="loader">
+        <div class="preLoader">
+            <img src="images/preLoader.gif" alt="">
+        </div>
+    </div>
 
     <!-- Begin .header__top--banner -->
-    <section class="banner" style="display: block;">
+    <section class="banner">
         <div class="banner-inner">
             <div class="banner-inner--1">
                 <img src="images/Picture19.png" alt="#">
@@ -47,6 +54,25 @@
                 <img src="images/Picture19.png" alt="#">
             </div>
             <!-- End .banner-inner--5 -->
+            <div class="banner-inner--item2">
+                <div class="banner-inner--6">
+                    <img src="images/Picture19.png" alt="#">
+                </div>
+                <!-- End .banner-inner--6 -->
+                <div class="banner-inner--7">
+                    <img src="images/Picture6.png" alt="#">
+                </div>
+                <!-- End .banner-inner--7 -->
+            </div>
+            <!-- End .banner-inner--item2 -->
+            <div class="banner-inner--8">
+                <img src="images/Picture19.png" alt="#">
+            </div>
+            <!-- End .banner-inner--8 -->
+            <div class="banner-inner--9">
+                <img src="images/Picture19-1.png" alt="#">
+            </div>
+            <!-- End .banner-inner--9 -->
         </div>
         <!-- End .banner-inner -->
     </section>
@@ -57,7 +83,7 @@
         <!-- Begin .header__top -->
         <section class="header__top">
             <div class="row">
-                <div class="col-lg-2 eader__top-logo">
+                <div class="col-lg-2 header__top-logo">
                     <img src="images/Logo.png" width="300px" alt="logo">
                 </div>
                 <!-- End .header__top-logo -->
@@ -97,7 +123,7 @@
                         Bấm <span>đăng ký</span> ngay!
                     </p>
                 </div>
-                <!-- End .top-content -->
+                <!-- End .top-content --->
                 <div class="top-content--topic">
                     <nav class="content-topic--nav">
                         <ul>
@@ -115,6 +141,7 @@
                             </li>
                             <li>
                                 <a href="#">
+                                    <!-- s -->
                                     <h3>100+</h3>
                                     <span>Khóa học với nhiều chủ đề</span>
                                 </a>
@@ -248,35 +275,52 @@
                 <!-- End .main__title -->
                 <div class="main__content-3">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 background">
+                            
                             <div class="content-cntt--item">
-                                <span><i class="fas fa-download"></i></span>
-                                <h4>CÔNG NGHỆ THÔNG TIN</h4>
-                                <p>Tìm kiếm giải pháp công nghệ phù hợp với doanh nghiệp</p>
-                                <button type="button">ĐĂNG KÝ</button>
+                                <div class="cntt-item--images"><img src="images/Picture4.png" alt=""></div>
+                                <div class="cntt-item--background"></div>
+                                <div class="cntt-item--text">
+                                    <span><i class="fas fa-download"></i></span>
+                                    <h4>CÔNG NGHỆ THÔNG TIN</h4>
+                                    <p>Tìm kiếm giải pháp công nghệ phù hợp với doanh nghiệp</p>
+                                    <button type="button">ĐĂNG KÝ</button>
+                                </div>
                             </div>
                             <!-- End .content-cntt--item -->
                             <div class="content-dn--item">
-                                <span><i class="fas fa-building"></i></span>
-                                <h4>THÀNH LẬP DOANH NGHIỆP</h4>
-                                <p>Tư vấn thủ tục, hồ sơ đăng ký doanh nghiệp</p>
-                                <button type="button">ĐĂNG KÝ</button>
+                                <div class="dn-item--images"><img src="images/Picture4.png" alt=""></div>
+                                <div class="dn-item--background"></div>
+                                <div class="dn-item--text">
+                                    <span><i class="fas fa-building"></i></span>
+                                    <h4>THÀNH LẬP DOANH NGHIỆP</h4>
+                                    <p>Tư vấn thủ tục, hồ sơ đăng ký doanh nghiệp</p>
+                                    <button type="button">ĐĂNG KÝ</button>
+                                </div>
                             </div>
                             <!-- End .content-dn--item -->
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 background">
                             <div class="content-nl--item">
-                                <span><i class="fas fa-user-alt"></i></span>
-                                <h4>NGUỒN NHÂN LỰC</h4>
-                                <p>Tư vấn quản lý nguồn nhân lực và chuyển đổi cơ cấu doanh nghiệp</p>
-                                <button type="button">ĐĂNG KÝ</button>
+                                <div class="nl-item--images"><img src="images/Picture4.png" alt=""></div>
+                                <div class="nl-item--background"></div>
+                                <div class="nl-item--text">
+                                    <span><i class="fas fa-user-alt"></i></span>
+                                    <h4>NGUỒN NHÂN LỰC</h4>
+                                    <p>Tư vấn quản lý nguồn nhân lực và chuyển đổi cơ cấu doanh nghiệp</p>
+                                    <button type="button">ĐĂNG KÝ</button>
+                                </div>
                             </div>
                             <!-- End .content-nl--item -->
                             <div class="content-tt--item">
-                                <span><i class="fas fa-briefcase"></i></span>
-                                <h4>THAM GIA HOẠT ĐỘNG TẠI WHC</h4>
-                                <p>Hội thảo, chương trình thiết kế dành riêng cho từng lĩnh vực, ngành nghề</p>
-                                <button type="button">ĐĂNG KÝ</button>
+                                <div class="tt-item--images"><img src="images/Picture4.png" alt=""></div>
+                                <div class="tt-item--background"></div>
+                                <div class="tt-item--text">
+                                    <span><i class="fas fa-briefcase"></i></span>
+                                    <h4>THAM GIA HOẠT ĐỘNG TẠI WHC</h4>
+                                    <p>Hội thảo, chương trình thiết kế dành riêng cho từng lĩnh vực, ngành nghề</p>
+                                    <button type="button">ĐĂNG KÝ</button>
+                                </div>
                             </div>
                             <!-- End .content-tt--item -->
                         </div>
@@ -469,6 +513,12 @@
         </section>
     </footer>
     <!-- End .footer -->
+
+    <div id="scrollup" class="back-to-top">
+        <span><i class="fas fa-arrow-up"></i></span>
+    </div>
+    <!-- End .back-to-top -->
+
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="module" src="js/script.js"></script>
 </body>
