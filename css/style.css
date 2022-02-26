@@ -36,6 +36,24 @@
  opacity: 1;
 }
 
+.header__top-logo span{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  background-color: gray;
+  border: 1px solid #333;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+
 /* =========== End .preLoader =============== */
 
 /* =========== Begin .banner =============== */
