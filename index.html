@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I&E</title>
     <link rel="icon" type="images/png" href="images/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/grid_system.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reponsive.css">
 </head>
@@ -24,25 +24,27 @@
         </div>
     </div>
 
+    <!--  wow animate__animated animate__pulse data-wow-duration="8s" -->
+
     <!-- Begin .header__top--banner -->
     <section class="banner">
         <div class="banner-inner">
             <div class="banner-inner--1">
-                <img src="images/Picture19.png" alt="#">
+                <img class="wow animate__animated animate__bounceInLeft" data-wow-duration="3s"  src="images/Picture19.png" alt="#">
             </div>
             <!-- End .banner-inner--1 -->
             <div class="banner-inner--item">
                 <div class="banner-inner--2">
-                    <img src="images/Picture19.png" alt="#">
+                    <img class="wow animate__animated animate__fadeInRight" data-wow-duration="3s" src="images/Picture19.png" alt="#">
                 </div>
                 <!-- End .banner-inner--2 -->
                 <div class="banner-inner--3">
-                    <img src="images/Picture5.png" alt="#">
+                    <img class="wow animate__animated animate__fadeInLeft" data-wow-duration="3s" src="images/Picture5.png" alt="#">
                 </div>
                 <!-- End .banner-inner--3 -->
             </div>
             <!-- End .banner-inner--item -->
-            <div class="banner-inner--item1">
+            <div class="banner-inner--item1 wow animate__animated animate__zoomIn">
                 <div class="banner-inner--background"></div>
                 <div class="banner-inner--4">
                     <img src="images/Picture5.png" alt="#">
@@ -51,44 +53,41 @@
             </div>
             <!-- End .banner-inner--item1 -->
             <div class="banner-inner--5">
-                <img src="images/Picture19.png" alt="#">
+                <img class="wow animate__animated animate__fadeInTopRight" src="images/Picture19.png" alt="#">
             </div>
             <!-- End .banner-inner--5 -->
             <div class="banner-inner--item2">
                 <div class="banner-inner--6">
-                    <img src="images/Picture19.png" alt="#">
+                    <img class="wow animate__animated animate__fadeInBottomRight" src="images/Picture19.png" alt="#">
                 </div>
                 <!-- End .banner-inner--6 -->
                 <div class="banner-inner--7">
-                    <img src="images/Picture6.png" alt="#">
+                    <img class="wow animate__animated animate__fadeInTopRight" src="images/Picture6.png" alt="#">
                 </div>
                 <!-- End .banner-inner--7 -->
             </div>
             <!-- End .banner-inner--item2 -->
-            <div class="banner-inner--8">
+            <div class="banner-inner--8 wow animate__animated animate__zoomIn">
                 <img src="images/Picture19.png" alt="#">
             </div>
             <!-- End .banner-inner--8 -->
-            <div class="banner-inner--9">
-                <img src="images/Picture19-1.png" alt="#">
-            </div>
-            <!-- End .banner-inner--9 -->
+
         </div>
         <!-- End .banner-inner -->
     </section>
     <!-- End .banner -->
 
     <!-- Begin .header -->
-    <header class="header">
+    <header class="header wow animate__animated animate__fadeInDown"  data-wow-duration="3s">
         <!-- Begin .header__top -->
         <section class="header__top">
             <div class="row">
+                <div class="header__top-bar"><i class="fas fa-bars"></i></div>
                 <div class="col-lg-2 header__top-logo">
-                    <span class="header__top-bar" style="display: none;"><i class="fas fa-bars"></i></span>
                     <img src="images/Logo.png" width="300px" alt="logo">
                 </div>
                 <!-- End .header__top-logo -->
-                <div class="col-lg-7 header__top-menu">
+                <div class="col-lg-7 header__top-menu wow animate__animated animate__zoomIn">
                     <nav class="top-menu--nav">
                         <ul class="menu-nav--ul">
                             <li><a href="#">Giới thiệu</a></li>
@@ -142,15 +141,18 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <!-- s -->
                                     <h3>100+</h3>
                                     <span>Khóa học với nhiều chủ đề</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <button type="button">ĐĂNG KÝ</button>
                                 </a>
                             </li>
                         </ul>
                     </nav>
                     <!-- End .content-topic--nav -->
-                    <span><button type="button">ĐĂNG KÝ</button></span>
                 </div>
                 <!-- End .top-content--topic -->
             </div>
@@ -162,18 +164,18 @@
 
     <!-- Begin .main  -->
     <main class="main">
-        <section>
+        <section class="">
             <!-- Begin .container -->
             <div class="container">
-                <div class="main__title" style="margin-top: 175px;">
+                <div class="main__title wow animate__animated animate__zoomIn">
                     <h2>DỊCH VỤ TẠI CÁC TRỤ SỞ WHC</h2>
                     <p>Trung tâm Dịch vụ tích hợp, linh hoạt chuyển đổi không gian làm việc chung, phong thí nghiệm,
                         không gian sự kiện và trưng bày triển lãm </p>
                 </div>
                 <!-- End .main__title -->
-                <div class="main__content-1">
+                <div class="main__content-1 wow animate__animated animate__fadeInRight">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 meeting-lab">
                             <div class="content-meeting--item">
                                 <span><i class="fas fa-handshake"></i></span>
                                 <h4>SỬ DỤNG PHÒNG HỌP</h4>
@@ -191,7 +193,7 @@
                             </div>
                             <!-- End .content-lab--item -->
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 event-whc">
                             <div class="content-event--item">
                                 <span><i class="far fa-calendar-alt"></i></span>
                                 <h4>TỔ CHỨC SỰ KIỆN</h4>
@@ -211,13 +213,17 @@
                     </div>
                 </div>
                 <!-- End .main__content-1 -->
-                <div class="main__title">
+
+                <!-- <div class="seperate"></div> -->
+
+                <!-- End .main__content-1 -->
+                <div class="main__title wow animate__animated animate__zoomIn">
                     <h2>ĐĂNG KÝ KHÓA HỌC</h2>
                     <p>Nguồn khóa học phòng phú, chất lượng, hộ trợ phát triển nhân lực theo các lĩnh vực, ngành nghề
                         chuyên môn</p>
                 </div>
                 <!-- End .main__title -->
-                <div class="main__content-2">
+                <div class="main__content-2 wow animate__animated animate__zoomIn">
                     <div class="row">
                         <div class="col-lg-4 content-2">
                             <img src="images/Picture1.png" alt="#">
@@ -268,19 +274,16 @@
                 </div>
                 <!-- End .main__content-2 -->
 
-                <div class="main__title">
-                    <h2>ĐĂNG KÝ KHÓA HỌC</h2>
-                    <p>Nguồn khóa học phòng phú, chất lượng, hộ trợ phát triển nhân lực theo các lĩnh vực, ngành nghề
-                        chuyên môn</p>
+                <div class="main__title wow animate__animated animate__zoomIn">
+                    <h2>ĐĂNG KÝ TƯ VẤN VỚI CHUYÊN GIA</h2>
+                    <p>Nơi quy tụ đội ngũ chuyên gia và đối tác giàu kinh nghiệm, sẵn sàng hỗ trọ, tư vấn doanh nghiệp
+                        đưa ra những quyết định, giải pháp tốt nhất cho tổ chức</p>
                 </div>
                 <!-- End .main__title -->
-                <div class="main__content-3">
+                <div class="main__content-3 wow animate__animated animate__fadeInRight">
                     <div class="row">
-                        <div class="col-lg-6 background">
-                            
+                        <div class="col-lg-6 cntt-dn background">
                             <div class="content-cntt--item">
-                                <div class="cntt-item--images"><img src="images/Picture4.png" alt=""></div>
-                                <div class="cntt-item--background"></div>
                                 <div class="cntt-item--text">
                                     <span><i class="fas fa-download"></i></span>
                                     <h4>CÔNG NGHỆ THÔNG TIN</h4>
@@ -289,22 +292,7 @@
                                 </div>
                             </div>
                             <!-- End .content-cntt--item -->
-                            <div class="content-dn--item">
-                                <div class="dn-item--images"><img src="images/Picture4.png" alt=""></div>
-                                <div class="dn-item--background"></div>
-                                <div class="dn-item--text">
-                                    <span><i class="fas fa-building"></i></span>
-                                    <h4>THÀNH LẬP DOANH NGHIỆP</h4>
-                                    <p>Tư vấn thủ tục, hồ sơ đăng ký doanh nghiệp</p>
-                                    <button type="button">ĐĂNG KÝ</button>
-                                </div>
-                            </div>
-                            <!-- End .content-dn--item -->
-                        </div>
-                        <div class="col-lg-6 background">
                             <div class="content-nl--item">
-                                <div class="nl-item--images"><img src="images/Picture4.png" alt=""></div>
-                                <div class="nl-item--background"></div>
                                 <div class="nl-item--text">
                                     <span><i class="fas fa-user-alt"></i></span>
                                     <h4>NGUỒN NHÂN LỰC</h4>
@@ -313,13 +301,23 @@
                                 </div>
                             </div>
                             <!-- End .content-nl--item -->
+                        </div>
+                        <div class="col-lg-6 dn-tt background">
+                            <div class="content-dn--item">
+                                <div class="dn-item--text">
+                                    <span><i class="fas fa-building"></i></span>
+                                    <h4>THÀNH LẬP DOANH NGHIỆP</h4>
+                                    <p>Tư vấn thủ tục, hồ sơ đăng ký doanh nghiệp</p>
+                                    <button type="button">ĐĂNG KÝ</button>
+                                </div>
+                            </div>
+                            <!-- End .content-dn--item -->
                             <div class="content-tt--item">
-                                <div class="tt-item--images"><img src="images/Picture4.png" alt=""></div>
-                                <div class="tt-item--background"></div>
                                 <div class="tt-item--text">
                                     <span><i class="fas fa-briefcase"></i></span>
-                                    <h4>THAM GIA HOẠT ĐỘNG TẠI WHC</h4>
-                                    <p>Hội thảo, chương trình thiết kế dành riêng cho từng lĩnh vực, ngành nghề</p>
+                                    <h4>TRUYỀN THÔNG</h4>
+                                    <p>Tư vấn xây dựng chiếc lược truyền thông, định vị và phát triển thương hiệu doanh
+                                        nghiệp</p>
                                     <button type="button">ĐĂNG KÝ</button>
                                 </div>
                             </div>
@@ -329,17 +327,17 @@
                 </div>
                 <!-- End .main__content-3 -->
 
-                <div class="main__title">
+                <div class="main__title wow animate__animated animate__zoomIn">
                     <h2>TRẢI NGHIỆM DOANH NGHIỆP</h2>
                     <p>WHC luôn đặt mục tiêu tạo nên dịch vụ chất lượng cũng như trải nghiệm mới mẻ, từ đó mang lại sự
                         hài lòng tuyệt đối cho doanh nghiệp</p>
                 </div>
                 <!-- End .main__title -->
-                <div class="main__content-4">
+                <div class="main__content-4 wow animate__animated animate__zoomIn">
                     <div class="row">
-                        <div class="col-lg-3 content-4">
+                        <div class="col-lg-4 content-4">
                             <div class="content-4--logo">
-                                <img src="images/Picture16.png" width="80px" alt="#">
+                                <div class="logo-images1"></div>
                             </div>
                             <!-- End .content-4--logo -->
                             <div class="content-4--text">
@@ -355,9 +353,9 @@
                             <!-- End .content-4--text -->
                         </div>
                         <!-- End .content-4 -->
-                        <div class="col-lg-3 content-4">
+                        <div class="col-lg-4 content-4">
                             <div class="content-4--logo">
-                                <img src="images/Picture17.png" width="80px" alt="#">
+                                <div class="logo-images2"></div>
                             </div>
                             <!-- End .content-4--logo -->
                             <div class="content-4--text">
@@ -373,9 +371,9 @@
                             <!-- End .content-4--text -->
                         </div>
                         <!-- End .content-4 -->
-                        <div class="col-lg-3 content-4">
+                        <div class="col-lg-4 content-4">
                             <div class="content-4--logo">
-                                <img src="images/Picture18.png" width="80px" alt="#">
+                                <div class="logo-images3"></div>
                             </div>
                             <!-- End .content-4--logo -->
                             <div class="content-4--text">
@@ -395,13 +393,13 @@
                 </div>
                 <!-- End .main__content-4 -->
 
-                <div class="main__title">
+                <div class="main__title wow animate__animated animate__zoomIn">
                     <h2>TIN TỨC - SỰ KIỆN</h2>
                     <p>Không gian cập nhật các tin tức về hoạt động, sự kiện nổi bật liên quan đến nhiều lĩnh vực, ngành
                         nghề</p>
                 </div>
                 <!-- End .main__title -->
-                <div class="main__content-5">
+                <div class="main__content-5 wow animate__animated animate__slideInRight">
                     <div class="col-lg-2 content-event--news">
                         <div class="event-news event-news--science">
                             <img src="images/Picture7.png" alt="">
@@ -459,7 +457,7 @@
             </div>
             <!-- End .container -->
 
-            <div class="main__content-bottom">
+            <div class="main__content-bottom wow animate__animated animate__zoomIn">
                 <nav class="content-bottom--partner">
                     <ul>
                         <li><a href="#"><img src="images/partner-1.png" width="50px" alt="#"></a></li>
@@ -479,7 +477,7 @@
     <!-- End .main  -->
 
     <!-- Begin .footer -->
-    <footer class="footer">
+    <footer class="footer wow animate__animated animate__zoomIn">
         <section>
             <div class="container">
                 <div class="row">
@@ -511,6 +509,10 @@
                     </div>
                 </div>
             </div>
+            <div class="banner-inner--9">
+                <img src="images/Picture19.png" alt="#">
+            </div>
+            <!-- End .banner-inner--9 -->
         </section>
     </footer>
     <!-- End .footer -->
@@ -521,6 +523,7 @@
     <!-- End .back-to-top -->
 
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="module" src="js/script.js"></script>
 </body>
 
